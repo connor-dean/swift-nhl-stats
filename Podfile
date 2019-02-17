@@ -7,5 +7,6 @@ target 'NHL Stats' do
 
   # Pods for NHL Stats
     pod 'Alamofire', '~> 5.0.0-beta.2'
-
+    pod 'SwiftyJSON'
+    
 end
