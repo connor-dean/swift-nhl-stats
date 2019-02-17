@@ -9,12 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let networkHelper = NetworkingHelper()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        networkHelper.requestTeamsAPI()
     }
-
-
 }
 
