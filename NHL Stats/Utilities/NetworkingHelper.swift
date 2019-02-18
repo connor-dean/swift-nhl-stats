@@ -11,11 +11,15 @@ import SwiftyJSON
 
 class NetworkingHelper {
     
-    func requestTeamsAPI() {
+    func getTeamsArray(completionHandler: @escaping ([String]?, Error?) -> ()) {
+        requestTeamsAPI(completionHandler: completionHandler)
+    }
+    
+    func requestTeamsAPI(completionHandler: @escaping ([String]?, Error?) -> ()) {
         var apiDict: [String: String] = [:]
         let apiRequestURL = "https://statsapi.web.nhl.com/api/v1/teams"
         
-        AF.request(apiRequestURL).responseJSON { (responseData) -> Void in
+        AF.request(apiRequestURL).responseJSON { responseData in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 for (key, subJson) in swiftyJsonVar["teams"] {
@@ -27,10 +31,13 @@ class NetworkingHelper {
                 // Store dictionary into array
                 let sortedApiDict = Array(apiDict.values).sorted(by: <)
                 
-                // TODO: Remove after debugging
-                print(sortedApiDict)
+                // Save to completionHandler
+                completionHandler(sortedApiDict, nil)
             } else {
                 print("There was an error!")
+                
+                // Need to find a better way to handle error
+                completionHandler(nil, nil)
             }
         }
     }

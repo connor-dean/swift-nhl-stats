@@ -7,94 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C3A8E4B221A03C500DEE4FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3A8E4A221A03C500DEE4FD /* AppDelegate.swift */; };
-		5C3A8E4D221A03C500DEE4FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3A8E4C221A03C500DEE4FD /* ViewController.swift */; };
-		5C3A8E50221A03C500DEE4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3A8E4E221A03C500DEE4FD /* Main.storyboard */; };
-		5C3A8E52221A03C800DEE4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3A8E51221A03C800DEE4FD /* Assets.xcassets */; };
-		5C3A8E55221A03C800DEE4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3A8E53221A03C800DEE4FD /* LaunchScreen.storyboard */; };
-		5CB73DF6221A0A2E008728FA /* NetworkingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB73DF5221A0A2E008728FA /* NetworkingHelper.swift */; };
-		F929975E0B39CC7324235C7C /* Pods_NHL_Stats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7833CD8EF51112E304B65A1F /* Pods_NHL_Stats.framework */; };
+		5C753022221A430900B13CD3 /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C753021221A430900B13CD3 /* TeamTableViewController.swift */; };
+		5C753028221A5E9B00B13CD3 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C753027221A5E9A00B13CD3 /* TeamCell.swift */; };
+		5C75302A221A5FFB00B13CD3 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C753029221A5FFB00B13CD3 /* Teams.swift */; };
+		5CC759F3221A3F8D008FE571 /* NetworkingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC759F2221A3F8D008FE571 /* NetworkingHelper.swift */; };
+		5CE35FD7221A3E3A0077124B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE35FD6221A3E3A0077124B /* AppDelegate.swift */; };
+		5CE35FDE221A3E3A0077124B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE35FDC221A3E3A0077124B /* Main.storyboard */; };
+		5CE35FE0221A3E3B0077124B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE35FDF221A3E3B0077124B /* Assets.xcassets */; };
+		5CE35FE3221A3E3B0077124B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE35FE1221A3E3B0077124B /* LaunchScreen.storyboard */; };
+		AFC041822869A4416238C17A /* Pods_NHL_Stats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B820282EB218F5230646CCE7 /* Pods_NHL_Stats.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C3A8E47221A03C500DEE4FD /* NHL Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NHL Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C3A8E4A221A03C500DEE4FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C3A8E4C221A03C500DEE4FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5C3A8E4F221A03C500DEE4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5C3A8E51221A03C800DEE4FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5C3A8E54221A03C800DEE4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5C3A8E56221A03C800DEE4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5CB73DF5221A0A2E008728FA /* NetworkingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelper.swift; sourceTree = "<group>"; };
-		7833CD8EF51112E304B65A1F /* Pods_NHL_Stats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHL_Stats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A90CF82E16378DF68AD7F78F /* Pods-NHL Stats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHL Stats.release.xcconfig"; path = "Target Support Files/Pods-NHL Stats/Pods-NHL Stats.release.xcconfig"; sourceTree = "<group>"; };
-		D60E3B7B6A719AE628462071 /* Pods-NHL Stats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHL Stats.debug.xcconfig"; path = "Target Support Files/Pods-NHL Stats/Pods-NHL Stats.debug.xcconfig"; sourceTree = "<group>"; };
+		3B5C1325D376AD472303E5C6 /* Pods-NHL Stats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHL Stats.debug.xcconfig"; path = "Target Support Files/Pods-NHL Stats/Pods-NHL Stats.debug.xcconfig"; sourceTree = "<group>"; };
+		5C753021221A430900B13CD3 /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
+		5C753027221A5E9A00B13CD3 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		5C753029221A5FFB00B13CD3 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		5CC759F2221A3F8D008FE571 /* NetworkingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelper.swift; sourceTree = "<group>"; };
+		5CE35FD3221A3E3A0077124B /* NHL Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NHL Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE35FD6221A3E3A0077124B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CE35FDD221A3E3A0077124B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CE35FDF221A3E3B0077124B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CE35FE2221A3E3B0077124B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CE35FE4221A3E3B0077124B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A75C9A125AF8C28D70EE4DD4 /* Pods-NHL Stats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHL Stats.release.xcconfig"; path = "Target Support Files/Pods-NHL Stats/Pods-NHL Stats.release.xcconfig"; sourceTree = "<group>"; };
+		B820282EB218F5230646CCE7 /* Pods_NHL_Stats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHL_Stats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5C3A8E44221A03C500DEE4FD /* Frameworks */ = {
+		5CE35FD0221A3E3A0077124B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F929975E0B39CC7324235C7C /* Pods_NHL_Stats.framework in Frameworks */,
+				AFC041822869A4416238C17A /* Pods_NHL_Stats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C777E6DF73B0CAF090CF6A3 /* Frameworks */ = {
+		456193E358966454A162C52D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7833CD8EF51112E304B65A1F /* Pods_NHL_Stats.framework */,
+				B820282EB218F5230646CCE7 /* Pods_NHL_Stats.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5C3A8E3E221A03C500DEE4FD = {
+		5C75302B221A652700B13CD3 /* TeamTable */ = {
 			isa = PBXGroup;
 			children = (
-				5C3A8E49221A03C500DEE4FD /* NHL Stats */,
-				5C3A8E48221A03C500DEE4FD /* Products */,
-				6D65A8FD8FB2F04F4907A38C /* Pods */,
-				2C777E6DF73B0CAF090CF6A3 /* Frameworks */,
+				5CE35FDC221A3E3A0077124B /* Main.storyboard */,
+				5C753021221A430900B13CD3 /* TeamTableViewController.swift */,
+				5C753027221A5E9A00B13CD3 /* TeamCell.swift */,
+				5C753029221A5FFB00B13CD3 /* Teams.swift */,
 			);
+			path = TeamTable;
 			sourceTree = "<group>";
 		};
-		5C3A8E48221A03C500DEE4FD /* Products */ = {
+		5CC759F1221A3F4C008FE571 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				5C3A8E47221A03C500DEE4FD /* NHL Stats.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5C3A8E49221A03C500DEE4FD /* NHL Stats */ = {
-			isa = PBXGroup;
-			children = (
-				5CB73DF4221A09F6008728FA /* Utilities */,
-				5C3A8E4A221A03C500DEE4FD /* AppDelegate.swift */,
-				5C3A8E4C221A03C500DEE4FD /* ViewController.swift */,
-				5C3A8E4E221A03C500DEE4FD /* Main.storyboard */,
-				5C3A8E51221A03C800DEE4FD /* Assets.xcassets */,
-				5C3A8E53221A03C800DEE4FD /* LaunchScreen.storyboard */,
-				5C3A8E56221A03C800DEE4FD /* Info.plist */,
-			);
-			path = "NHL Stats";
-			sourceTree = "<group>";
-		};
-		5CB73DF4221A09F6008728FA /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				5CB73DF5221A0A2E008728FA /* NetworkingHelper.swift */,
+				5CC759F2221A3F8D008FE571 /* NetworkingHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		6D65A8FD8FB2F04F4907A38C /* Pods */ = {
+		5CE35FCA221A3E3A0077124B = {
 			isa = PBXGroup;
 			children = (
-				D60E3B7B6A719AE628462071 /* Pods-NHL Stats.debug.xcconfig */,
-				A90CF82E16378DF68AD7F78F /* Pods-NHL Stats.release.xcconfig */,
+				5CE35FD5221A3E3A0077124B /* NHL Stats */,
+				5CE35FD4221A3E3A0077124B /* Products */,
+				75659130F21AA730DF453559 /* Pods */,
+				456193E358966454A162C52D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CE35FD4221A3E3A0077124B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CE35FD3221A3E3A0077124B /* NHL Stats.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CE35FD5221A3E3A0077124B /* NHL Stats */ = {
+			isa = PBXGroup;
+			children = (
+				5C75302B221A652700B13CD3 /* TeamTable */,
+				5CC759F1221A3F4C008FE571 /* Utilities */,
+				5CE35FD6221A3E3A0077124B /* AppDelegate.swift */,
+				5CE35FDF221A3E3B0077124B /* Assets.xcassets */,
+				5CE35FE1221A3E3B0077124B /* LaunchScreen.storyboard */,
+				5CE35FE4221A3E3B0077124B /* Info.plist */,
+			);
+			path = "NHL Stats";
+			sourceTree = "<group>";
+		};
+		75659130F21AA730DF453559 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B5C1325D376AD472303E5C6 /* Pods-NHL Stats.debug.xcconfig */,
+				A75C9A125AF8C28D70EE4DD4 /* Pods-NHL Stats.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -102,15 +116,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C3A8E46221A03C500DEE4FD /* NHL Stats */ = {
+		5CE35FD2221A3E3A0077124B /* NHL Stats */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C3A8E59221A03C800DEE4FD /* Build configuration list for PBXNativeTarget "NHL Stats" */;
+			buildConfigurationList = 5CE35FE7221A3E3B0077124B /* Build configuration list for PBXNativeTarget "NHL Stats" */;
 			buildPhases = (
-				C716ABD79F0863D149A9CB01 /* [CP] Check Pods Manifest.lock */,
-				5C3A8E43221A03C500DEE4FD /* Sources */,
-				5C3A8E44221A03C500DEE4FD /* Frameworks */,
-				5C3A8E45221A03C500DEE4FD /* Resources */,
-				319344DAC46AB6EE237A6CA9 /* [CP] Embed Pods Frameworks */,
+				295A6F6F11858036A448AE38 /* [CP] Check Pods Manifest.lock */,
+				5CE35FCF221A3E3A0077124B /* Sources */,
+				5CE35FD0221A3E3A0077124B /* Frameworks */,
+				5CE35FD1221A3E3A0077124B /* Resources */,
+				D6C85E6703B8BE796505160B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,25 +132,25 @@
 			);
 			name = "NHL Stats";
 			productName = "NHL Stats";
-			productReference = 5C3A8E47221A03C500DEE4FD /* NHL Stats.app */;
+			productReference = 5CE35FD3221A3E3A0077124B /* NHL Stats.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5C3A8E3F221A03C500DEE4FD /* Project object */ = {
+		5CE35FCB221A3E3A0077124B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Connor Dean";
 				TargetAttributes = {
-					5C3A8E46221A03C500DEE4FD = {
+					5CE35FD2221A3E3A0077124B = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 5C3A8E42221A03C500DEE4FD /* Build configuration list for PBXProject "NHL Stats" */;
+			buildConfigurationList = 5CE35FCE221A3E3A0077124B /* Build configuration list for PBXProject "NHL Stats" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,31 +158,53 @@
 				en,
 				Base,
 			);
-			mainGroup = 5C3A8E3E221A03C500DEE4FD;
-			productRefGroup = 5C3A8E48221A03C500DEE4FD /* Products */;
+			mainGroup = 5CE35FCA221A3E3A0077124B;
+			productRefGroup = 5CE35FD4221A3E3A0077124B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C3A8E46221A03C500DEE4FD /* NHL Stats */,
+				5CE35FD2221A3E3A0077124B /* NHL Stats */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5C3A8E45221A03C500DEE4FD /* Resources */ = {
+		5CE35FD1221A3E3A0077124B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C3A8E55221A03C800DEE4FD /* LaunchScreen.storyboard in Resources */,
-				5C3A8E52221A03C800DEE4FD /* Assets.xcassets in Resources */,
-				5C3A8E50221A03C500DEE4FD /* Main.storyboard in Resources */,
+				5CE35FE3221A3E3B0077124B /* LaunchScreen.storyboard in Resources */,
+				5CE35FE0221A3E3B0077124B /* Assets.xcassets in Resources */,
+				5CE35FDE221A3E3A0077124B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		319344DAC46AB6EE237A6CA9 /* [CP] Embed Pods Frameworks */ = {
+		295A6F6F11858036A448AE38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NHL Stats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6C85E6703B8BE796505160B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,56 +228,36 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NHL Stats/Pods-NHL Stats-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C716ABD79F0863D149A9CB01 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NHL Stats-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5C3A8E43221A03C500DEE4FD /* Sources */ = {
+		5CE35FCF221A3E3A0077124B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CB73DF6221A0A2E008728FA /* NetworkingHelper.swift in Sources */,
-				5C3A8E4D221A03C500DEE4FD /* ViewController.swift in Sources */,
-				5C3A8E4B221A03C500DEE4FD /* AppDelegate.swift in Sources */,
+				5C75302A221A5FFB00B13CD3 /* Teams.swift in Sources */,
+				5C753022221A430900B13CD3 /* TeamTableViewController.swift in Sources */,
+				5C753028221A5E9B00B13CD3 /* TeamCell.swift in Sources */,
+				5CC759F3221A3F8D008FE571 /* NetworkingHelper.swift in Sources */,
+				5CE35FD7221A3E3A0077124B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5C3A8E4E221A03C500DEE4FD /* Main.storyboard */ = {
+		5CE35FDC221A3E3A0077124B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C3A8E4F221A03C500DEE4FD /* Base */,
+				5CE35FDD221A3E3A0077124B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5C3A8E53221A03C800DEE4FD /* LaunchScreen.storyboard */ = {
+		5CE35FE1221A3E3B0077124B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C3A8E54221A03C800DEE4FD /* Base */,
+				5CE35FE2221A3E3B0077124B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -249,7 +265,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5C3A8E57221A03C800DEE4FD /* Debug */ = {
+		5CE35FE5221A3E3B0077124B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -310,7 +326,7 @@
 			};
 			name = Debug;
 		};
-		5C3A8E58221A03C800DEE4FD /* Release */ = {
+		5CE35FE6221A3E3B0077124B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -365,9 +381,9 @@
 			};
 			name = Release;
 		};
-		5C3A8E5A221A03C800DEE4FD /* Debug */ = {
+		5CE35FE8221A3E3B0077124B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D60E3B7B6A719AE628462071 /* Pods-NHL Stats.debug.xcconfig */;
+			baseConfigurationReference = 3B5C1325D376AD472303E5C6 /* Pods-NHL Stats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,9 +400,9 @@
 			};
 			name = Debug;
 		};
-		5C3A8E5B221A03C800DEE4FD /* Release */ = {
+		5CE35FE9221A3E3B0077124B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A90CF82E16378DF68AD7F78F /* Pods-NHL Stats.release.xcconfig */;
+			baseConfigurationReference = A75C9A125AF8C28D70EE4DD4 /* Pods-NHL Stats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,25 +422,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C3A8E42221A03C500DEE4FD /* Build configuration list for PBXProject "NHL Stats" */ = {
+		5CE35FCE221A3E3A0077124B /* Build configuration list for PBXProject "NHL Stats" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C3A8E57221A03C800DEE4FD /* Debug */,
-				5C3A8E58221A03C800DEE4FD /* Release */,
+				5CE35FE5221A3E3B0077124B /* Debug */,
+				5CE35FE6221A3E3B0077124B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C3A8E59221A03C800DEE4FD /* Build configuration list for PBXNativeTarget "NHL Stats" */ = {
+		5CE35FE7221A3E3B0077124B /* Build configuration list for PBXNativeTarget "NHL Stats" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C3A8E5A221A03C800DEE4FD /* Debug */,
-				5C3A8E5B221A03C800DEE4FD /* Release */,
+				5CE35FE8221A3E3B0077124B /* Debug */,
+				5CE35FE9221A3E3B0077124B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5C3A8E3F221A03C500DEE4FD /* Project object */;
+	rootObject = 5CE35FCB221A3E3A0077124B /* Project object */;
 }

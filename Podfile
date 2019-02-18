@@ -6,7 +6,7 @@ target 'NHL Stats' do
   use_frameworks!
 
   # Pods for NHL Stats
+    pod 'SwiftyJSON', '~> 4.0'
     pod 'Alamofire', '~> 5.0.0-beta.2'
-    pod 'SwiftyJSON'
-    
+
 end
