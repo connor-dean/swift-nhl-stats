@@ -8,22 +8,14 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class TeamTableViewController: UIViewController {
     let networkingHelper = NetworkingHelper()
     
-    // Temp
-    var videos: [Teams] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        networkingHelper.getTeamsArray() { response, error in
-            var tempTeams: [Teams] = []
-            for element in response! {
-                tempTeams.append(Teams(teamName: element))
-                print(element)
-            }
-        }
+        networkingHelper.requestTeamsAPI()
+        networkingHelper.receiveDataFromUsers()
     }
 }

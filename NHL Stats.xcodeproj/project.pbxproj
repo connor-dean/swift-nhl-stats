@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C753022221A430900B13CD3 /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C753021221A430900B13CD3 /* TeamTableViewController.swift */; };
-		5C753028221A5E9B00B13CD3 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C753027221A5E9A00B13CD3 /* TeamCell.swift */; };
-		5C75302A221A5FFB00B13CD3 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C753029221A5FFB00B13CD3 /* Teams.swift */; };
 		5CC759F3221A3F8D008FE571 /* NetworkingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC759F2221A3F8D008FE571 /* NetworkingHelper.swift */; };
+		5CE20976221A827900218660 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CE20974221A827900218660 /* Model.xcdatamodeld */; };
 		5CE35FD7221A3E3A0077124B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE35FD6221A3E3A0077124B /* AppDelegate.swift */; };
 		5CE35FDE221A3E3A0077124B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE35FDC221A3E3A0077124B /* Main.storyboard */; };
 		5CE35FE0221A3E3B0077124B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE35FDF221A3E3B0077124B /* Assets.xcassets */; };
@@ -21,9 +20,8 @@
 /* Begin PBXFileReference section */
 		3B5C1325D376AD472303E5C6 /* Pods-NHL Stats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHL Stats.debug.xcconfig"; path = "Target Support Files/Pods-NHL Stats/Pods-NHL Stats.debug.xcconfig"; sourceTree = "<group>"; };
 		5C753021221A430900B13CD3 /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
-		5C753027221A5E9A00B13CD3 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
-		5C753029221A5FFB00B13CD3 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		5CC759F2221A3F8D008FE571 /* NetworkingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelper.swift; sourceTree = "<group>"; };
+		5CE20975221A827900218660 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5CE35FD3221A3E3A0077124B /* NHL Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NHL Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE35FD6221A3E3A0077124B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CE35FDD221A3E3A0077124B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,8 +57,6 @@
 			children = (
 				5CE35FDC221A3E3A0077124B /* Main.storyboard */,
 				5C753021221A430900B13CD3 /* TeamTableViewController.swift */,
-				5C753027221A5E9A00B13CD3 /* TeamCell.swift */,
-				5C753029221A5FFB00B13CD3 /* Teams.swift */,
 			);
 			path = TeamTable;
 			sourceTree = "<group>";
@@ -76,6 +72,7 @@
 		5CE35FCA221A3E3A0077124B = {
 			isa = PBXGroup;
 			children = (
+				5CE20974221A827900218660 /* Model.xcdatamodeld */,
 				5CE35FD5221A3E3A0077124B /* NHL Stats */,
 				5CE35FD4221A3E3A0077124B /* Products */,
 				75659130F21AA730DF453559 /* Pods */,
@@ -235,9 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C75302A221A5FFB00B13CD3 /* Teams.swift in Sources */,
 				5C753022221A430900B13CD3 /* TeamTableViewController.swift in Sources */,
-				5C753028221A5E9B00B13CD3 /* TeamCell.swift in Sources */,
+				5CE20976221A827900218660 /* Model.xcdatamodeld in Sources */,
 				5CC759F3221A3F8D008FE571 /* NetworkingHelper.swift in Sources */,
 				5CE35FD7221A3E3A0077124B /* AppDelegate.swift in Sources */,
 			);
@@ -441,6 +437,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CE20974221A827900218660 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CE20975221A827900218660 /* Model.xcdatamodel */,
+			);
+			currentVersion = 5CE20975221A827900218660 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5CE35FCB221A3E3A0077124B /* Project object */;
 }
